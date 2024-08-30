@@ -1,0 +1,543 @@
+@font-face {
+    font-family: NetflixSans;
+    src: url(/Assets/NetflixSans_W_Bd.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main {
+    height: 97vh;
+    background-image: url(/Assets/image/bg.png);
+    position: relative;
+    background-size: max(2000px, 100vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg {
+    height: 97vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: auto;
+    position: relative;
+    height: 100px;
+
+}
+
+nav img {
+    position: relative;
+    /* z-index: ; */
+    width: 13vw;
+
+
+
+}
+
+.navbtn button {
+    position: relative;
+    top: 0px;
+    /* z-index: 0; */
+    padding: 0px 7px;
+    border-radius: 3px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    padding: 0px 5px;
+    font-size: large;
+
+}
+
+#Sign {
+    background-color: red;
+    padding: 10px;
+}
+
+.text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: NetflixSans;
+    height: 100%;
+    position: relative;
+    gap: 15px;
+    padding: 0px 15px;
+    align-content: center;
+    bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.text> :first-child {
+    display: flex;
+    font-size: 30px;
+    /* margin: 0px 0px 1px; */
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+
+.text> :nth-child(2) {
+    display: flex;
+    font-size: 30px;
+    /* margin: 0px 0px 1px; */
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+}
+
+#Cancel {
+    font-size: 20px;
+    /* padding-top: 20px; */
+    padding-bottom: 20px; 
+}
+
+
+#start {
+    background-color: red;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    font-size: larger;
+}
+
+#email {
+    width: 270px;
+    height: 29px;
+    padding: 5px;
+    background-color: rgba(99, 98, 102, 0.39);
+    /* opacity: 0.5; */
+    font-size: medium;
+    color: white;
+    font-size: large;
+}
+
+/* .seperation {
+    width: 100%;
+    height: px;
+    background-color: rgb(240, 31, 31);
+    overflow-x: hidden;
+    border: 2px solid red;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+
+    position: relative;
+    bottom: 105px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    color: white;
+} */
+ .seperation{
+     width: 100vw;
+     box-sizing: border-box;
+     position: absolute;
+     height: 85px;
+     top:    90vh;
+     margin: auto;
+     display: -webkit-box;
+     display: -webkit-flex;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-align-items: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+     border: solid .25rem transparent;
+     border-top-left-radius: 81% 100%;
+     border-top-right-radius: 81% 100%;
+     border: 2px solid red;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: white;
+ }
+ .seperation h2{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    display: flex;
+
+ }
+ .trend{
+    
+    color: white;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    font-family: NetflixSans;
+    font-weight: bolder;
+    width: 40vw;
+    gap: 10px;
+} 
+.country{
+    width: 100px;
+    display: flex;
+    gap: 20px;
+}
+#country{
+    background-color: rgba(14, 13, 13, 0.521);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 2px 5px;
+    font-weight: bold;
+     
+}
+#sm{
+    font-weight: bold;
+    background-color: rgba(14, 13, 13, 0.521);
+    font-weight: bold;
+    padding: 2px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+
+}
+.slider {
+    padding: 0px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    position: relative;
+    top: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ h2{
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    display: inline;
+}
+.container{
+    width: 90vw;
+    position: relative;
+    top: 110px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    padding:  0px;
+    color: white;
+    gap: 50px;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    overflow-x: hidden;
+    
+}
+.no1{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 15px;
+    background: linear-gradient(red ,purple);
+}
+.no1 :nth-child(1){
+    font-size: x-large;
+    padding: 10px;
+}
+.no1 :nth-child(2){
+    font-size: large;
+    padding: 10px;
+}
+.no2{
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+    background: linear-gradient(red ,purple);
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 15px;
+}
+.no2 :nth-child(1){
+    font-size: x-large;
+    padding: 10px;
+}
+.no2 :nth-child(2){
+    font-size: large;
+    padding: 10px;
+}
+.no3{
+    overflow-x: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    
+    background: linear-gradient(red ,purple);
+    
+}
+.no3 :nth-child(1){
+    font-size: x-large;
+    padding: 10px;
+}
+.no3 :nth-child(2){
+    font-size: large;
+    padding: 10px;
+}
+.no4{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    
+    background: linear-gradient(red ,purple);
+    border-radius: 15px;
+}
+.no4 :nth-child(1){
+    font-size: x-large;
+    padding: 10px;
+}
+.no4 :nth-child(2){
+    font-size: large;
+    padding: 10px;
+}
+
+
+.fq {
+    height: auto;
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 7px;
+    top: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    
+}
+
+.fq h1 {
+   
+    color: white;
+    padding: 35px 0px;
+    padding-bottom: 20px ;
+    font-size: x-large;
+    position: relative;
+    left: 50px;
+    font-family: NetflixSans;
+}
+
+.q1 {
+    color: white;
+    display: flex;
+    margin: auto;
+    width: 50vw;
+    background-color: rgb(27, 27, 27);
+    height: 40px;
+    padding: 3px 15px;
+    padding-top: 7px;
+    font-family:NetflixSans ;
+    font-size: large;
+    
+}
+
+.q2 {
+    font-size: large;
+    color: white;
+    display: flex;
+    margin: auto;
+    width: 50vw;
+    background-color:rgb(27, 27, 27);
+    height: 40px; 
+    padding: 3px 15px;
+    padding-top: 7px;
+    font-family: NetflixSans;
+}
+
+.q3 {
+    font-size: large;
+    font-family: NetflixSans;
+    color: white;
+    display: flex;
+    margin: auto;
+    width: 50vw;
+    background-color: rgb(27, 27, 27);
+    height: 40px;
+    padding: 3px 15px;
+    padding-top: 7px;
+}
+
+.q4 {
+    font-size: large;
+    font-family: NetflixSans;
+    color: white;
+    display: flex;
+    margin: auto;
+    width: 50vw;
+    background-color: rgb(27, 27, 27);
+    height: 40px;
+    padding: 3px 15px;
+    padding-top: 7px;
+    position: relative;
+    margin-bottom: 10px;
+ 
+}
+.q1:hover{
+    cursor: pointer;
+    background-color: rgba(153, 152, 152, 0.3);
+
+}
+.q2:hover{
+    cursor: pointer;
+    background-color: rgba(153, 152, 152, 0.3);
+
+}
+.q3:hover{
+    cursor: pointer;
+    background-color: rgba(153, 152, 152, 0.3);
+
+}
+.q4:hover{
+    cursor: pointer;
+    background-color: rgba(153, 152, 152, 0.3);
+
+}
+.femail {
+    position: relative;
+    left: 300px;   
+}
+#restart{
+    color: white;
+    font-size: large;
+    position: relative;
+    left: 300px;
+    
+}
+footer{
+    width: 90vw;
+    height: 20vh;
+    position: relative;
+    top: 25vh;
+    color: white;
+    
+    gap: 23px;
+    margin: auto;
+}
+#contact{
+   font: xx-large;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+   position: relative;
+   gap: 15px;
+   left: 5px;
+}
+#num{
+    font-size: medium;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.account{
+
+    position: relative;
+    left: 50vw;
+   bottom:  30px;
+}
+.allcenter{
+    display: flex;
+    justify-content: center;
+    padding:  0 px10px;
+    position: relative;
+    top: 100px;
+    overflow-x: hidden;
+}
+.seperation2{
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 150px;
+    overflow-x: hidden;
+
+}
+@media  screen and (max-width:500px){
+   *{
+    padding: 0;
+   }
+    .text{
+        gap: 0px;
+    }
+    .text> :first-child{
+        font-size:32px;
+    }
+   nav{
+    max-width: 90vw;
+   }
+    
+    .fq h1{
+        font-size:30px;
+        overflow-x: hidden;
+    }
+   #logo{
+    height: 50vh;
+   }
+   .fq h1{
+    position: relative;
+    left: 5px;
+   }
+    #start{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 10px;
+        left: 80px;
+
+    }
+    .no1, .no2, .no3, .no4{
+        padding: 0;
+        right: 0px;
+        border: none;
+        
+    }
+    .container{
+        overflow-x: hidden;
+        flex-direction: column;
+        width: 80vw;
+        border: none;
+    }
+    #restart{
+        left: 50px;
+    }
+    .femail{
+        position: relative;
+       left: 50px;
+    }
+}
